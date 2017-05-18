@@ -4,6 +4,10 @@
 #include <winuser.h>
 #include <pshpack1.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef HRESULT (CALLBACK *PFTASKDIALOGCALLBACK)(_In_ HWND hwnd, _In_ UINT msg, _In_ WPARAM wParam, _In_ LPARAM lParam, _In_ LONG_PTR lpRefData);
 
 enum _TASKDIALOG_FLAGS
@@ -140,3 +144,8 @@ typedef struct _TASKDIALOGCONFIG
 
 DECLSPEC_IMPORT HRESULT WINAPI TaskDialogIndirect(_In_ const TASKDIALOGCONFIG *pTaskConfig, _Out_opt_ int *pnButton, _Out_opt_ int *pnRadioButton, _Out_opt_ BOOL *pfVerificationFlagChecked);
 DECLSPEC_IMPORT HRESULT WINAPI TaskDialog(_In_opt_ HWND hwndOwner, _In_opt_ HINSTANCE hInstance, _In_opt_ PCWSTR pszWindowTitle, _In_opt_ PCWSTR pszMainInstruction, _In_opt_ PCWSTR pszContent, TASKDIALOG_COMMON_BUTTON_FLAGS dwCommonButtons, _In_opt_ PCWSTR pszIcon, _Out_opt_ int *pnButton);
+
+
+#ifdef __cplusplus
+}
+#endif

@@ -83,7 +83,7 @@ BOOL MessageTaskDlg::OnButtonClicked(int buttonId)
 
 	ModifyFlags(0, TDF_ALLOW_DIALOG_CANCELLATION);
 
-	return FALSE;
+	return TRUE;
 }
 
 void MessageTaskDlg::OnVerificationClicked(bool bChecked)
