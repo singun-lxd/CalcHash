@@ -1,0 +1,433 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CalcHash.ico"
+IDI_ADMIN               ICON                    "res\\admin.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 315, 207
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "哈希校验工具"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "拖放、选择文件或输入字符串进行校验。",IDC_STATIC,7,7,144,11
+    CONTROL         "窗口总在最前(&A)",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,7,73,11
+    CONTROL         "文件(&F)：",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,7,21,43,11
+    EDITTEXT        IDC_EDIT2,60,20,189,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览(&B)...",IDC_BUTTON2,251,19,57,14
+    CONTROL         "字符串(&S)：",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,38,52,9
+    EDITTEXT        IDC_EDIT3,60,37,248,12,ES_AUTOHSCROLL
+    LTEXT           "算法类型：",IDC_STATIC,7,55,57,11
+    CONTROL         "&MD5",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,54,35,10
+    CONTROL         "S&HA1",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,54,31,9
+    CONTROL         "C&RC32",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,54,36,10
+    DEFPUSHBUTTON   "计算哈希值(&C)",IDC_BUTTON3,233,51,75,14
+    LTEXT           "结果显示方式：",IDC_STATIC,157,67,56,9
+    CONTROL         "大写(&U)",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,219,67,41,10
+    CONTROL         "小写(&W)",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,265,67,43,10
+    LTEXT           "结果(&L)：",IDC_STATIC,7,67,52,8
+    LISTBOX         IDC_LIST1,7,78,301,45,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "正在计算，请稍候……",IDC_STATIC_NOTICE,7,80,98,10,NOT WS_VISIBLE
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | NOT WS_VISIBLE | WS_BORDER,7,93,301,11
+    PUSHBUTTON      "停止计算(&T)",IDC_BUTTON5,233,107,75,14,NOT WS_VISIBLE
+    PUSHBUTTON      "复制结果值(&O)",IDC_BUTTON4,233,124,75,14
+    LTEXT           "验证值（一行一个）(&V)：",IDC_STATIC,7,127,94,11
+    EDITTEXT        IDC_EDIT1,7,140,301,30,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "立即校验(&E)",IDOK,151,173,75,14
+    PUSHBUTTON      "粘贴并校验(&P)",IDC_BUTTON1,233,173,75,14
+    PUSHBUTTON      "剪贴板快速匹配(&Q)",IDC_BUTTON6,7,173,96,14
+    LTEXT           "刘新典 制作 欢迎使用和传播本程序",IDC_STATIC,7,189,136,11
+    CONTROL         "添加命令到右键菜单(&D)",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,212,189,96,11
+END
+
+IDD_PRIVILEGE DIALOGEX 0, 0, 237, 136
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            IDI_ADMIN,IDC_STATIC,10,11,21,20
+    LTEXT           "",IDC_STATIC_MAIN,39,11,190,15
+    LTEXT           "",IDC_STATIC_DESC,39,32,188,55
+    LTEXT           "",IDC_STATIC_EXTENDED,39,94,187,17
+    DEFPUSHBUTTON   "",IDOK,85,115,70,14
+    PUSHBUTTON      "",IDCANCEL,160,115,70,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_PRIVILEGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,8,32
+ PRODUCTVERSION 1,2,8,32
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "哈希校验工具"
+            VALUE "FileVersion", "1.2.8.32"
+            VALUE "InternalName", "CalcHash"
+            VALUE "LegalCopyright", "Copyright 2012 刘新典"
+            VALUE "OriginalFilename", "CalcHash.exe"
+            VALUE "ProductName", "哈希校验工具"
+            VALUE "ProductVersion", "1.2.8.32"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_CALC_HASH_TITLE     "哈希校验工具"
+    IDS_MENU_TOGGLE_AERO    "切换 Aero(&T)"
+    IDS_MSGBOX_AERO_FAILED  "切换 Aero 失败！"
+    IDS_MSGBOX_NO_FILE      "请选择要校验的文件！"
+    IDS_MSGBOX_NO_STRING    "请输入要校验的字符串！"
+    IDS_MSGBOX_INVALID_FILE "请选择有效的文件！"
+    IDS_MSGBOX_NO_ALGORITHM "请至少选择一种校验算法！"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSGBOX_NO_RESULT    "请先选择文件或输入字符串进行校验！"
+    IDS_MSGBOX_CLIPBOARD_ERROR "打开剪贴板出错！"
+    IDS_MSGBOX_NEED_CALC    "请先选择文件或输入字符串计算哈希值再进行校验！"
+    IDS_MSGBOX_NOT_EMPTY    "验证值不能为空！"
+    IDS_MSGBOX_VERIFY_SUCCESS "校验成功！其中校验通过的算法结果是：%s\n部分无效校验数据已跳过！"
+    IDS_MSGBOX_VERIFY_ALL   "校验成功，所有有效校验数据的值均匹配！"
+    IDS_MSGBOX_VERIFY_FAIL  "校验失败！其中不匹配的算法结果是：%s\n数据可能被更改！"
+    IDS_MSGBOX_SAME_RESULT  "剪贴板中的数据与计算结果中的 %s 值完全相同！"
+    IDS_MSGBOX_DIFF_RESULT  "剪贴板中的数据与计算结果中的所有值都不相同。"
+    IDS_MSGBOX_CLIPBOARD_EMPTY "剪贴板中没有字符串。"
+    IDS_MSGBOX_REGDEL_ERROR "删除注册表键出错！"
+    IDS_MSGBOX_REGOPEN_ERROR "打开注册表键出错！"
+    IDS_MSGBOX_REGCREATE_ERROR "创建注册表键出错！"
+    IDS_MSGBOX_REGSET_ERROR "设置注册表键值出错！"
+    IDS_MSGBOX_REGICON_ERROR "设置右键菜单图标出错！"
+    IDS_MSGBOX_CANNOT_READ_FILE "无法读取文件！"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSGBOX_GET_FILE_SIZE_ER "无法获取文件大小！"
+    IDS_MSGBOX_CONTENT_COPIED "选中项内容已复制到剪贴板。"
+    IDS_MSGBOX_REGEXE_ERROR "设置右键菜单命令出错！"
+    IDS_MSGBOX_REG_ERROR    "请确保本程序有足够权限，且没有被安全软件拦截。"
+    IDS_MSGBOX_AERO_TOGGLE  "确定要切换系统 Aero 开关状态吗？"
+    IDS_MSGBOX_INVALID_ARG  "无效参数“%s”。"
+    IDS_MSGBOX_LNK_SELECT   "当前选择的是一个快捷方式文件，是否要转到相应的目标文件？"
+    IDS_LNK_NOT_ASK_ME      "不再提示我(&D)"
+    IDS_LIST_TYPE_FILE      "校验类型：文件（修改时间：%04d 年 %02d 月 %02d 日 %02d:%02d:%02d）"
+    IDS_LIST_SIZE           "大小：%s 字节（%s）"
+    IDS_LIST_TYPE_STRING    "校验类型：字符串"
+    IDS_LIST_CANCEL         "计算已取消。"
+    IDS_JUMPLIST_TOGGLE_AERO "切换 Aero"
+    IDS_JUMPLIST_NO_AERO    "以无 Aero 界面方式启动"
+    IDS_JUMPLIST_USE_AERO   "以全 Aero 界面方式启动"
+    IDS_PRIVILEGE_MORE      "需要更高的权限"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PRIVILEGE_NEED      "当前没有权限更改文件右键菜单关联。"
+    IDS_PRIVILEGE_DESC      "单击“提升权限”将提升到管理员权限进行设置。"
+    IDS_PRIVILEGE_TIP1      "如果出现“用户账户控制”窗口，请选择“是”或者“允许”。"
+    IDS_PRIVILEGE_TIP2      "如果出现“运行身份”对话框，请在该窗口中用管理员用户名和密码登录"
+    IDS_PRIVILEGE_ELEVATE   "以管理员权限更改右键菜单"
+    IDS_PRIVILEGE_CANCEL    "不执行更改右键菜单的操作"
+    IDS_PRIVILEGE_CANCEL2   "单击“取消”不执行更改右键菜单的操作。"
+    IDS_PRIVILEGE_EXTENDED  "本窗口将在操作完成后自动关闭。"
+    IDS_PRIVILEGE_CMD1      "提升权限"
+    IDS_PRIVILEGE_CMD2      "取消"
+    IDS_RIGHT_CLICK_MENU    "校验哈希值"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 315, 207
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "Hash Checksum Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Drag and drop, select a file or enter a string to verify.",IDC_STATIC,7,7,180,11
+    CONTROL         "Window &always on top",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,220,7,88,11
+    CONTROL         "&File: ",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,7,21,31,11
+    EDITTEXT        IDC_EDIT2,46,20,203,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_BUTTON2,251,19,57,14
+    CONTROL         "&String: ",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,38,36,9
+    EDITTEXT        IDC_EDIT3,46,37,262,12,ES_AUTOHSCROLL
+    LTEXT           "Algorithm type: ",IDC_STATIC,7,55,57,11
+    CONTROL         "&MD5",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,54,35,10
+    CONTROL         "S&HA1",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,105,54,31,9
+    CONTROL         "C&RC32",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,151,54,36,10
+    DEFPUSHBUTTON   "&Calculate Hash",IDC_BUTTON3,233,51,75,14
+    LTEXT           "Show results in: ",IDC_STATIC,142,67,55,9
+    CONTROL         "&Uppercase",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,203,67,51,10
+    CONTROL         "Lo&wercase",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,257,67,51,10
+    LTEXT           "Resu&lts: ",IDC_STATIC,7,67,52,8
+    LISTBOX         IDC_LIST1,7,78,301,45,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Calculating, please wait......",IDC_STATIC_NOTICE,7,80,98,10,NOT WS_VISIBLE
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | NOT WS_VISIBLE | WS_BORDER,7,93,301,11
+    PUSHBUTTON      "S&top Calculating",IDC_BUTTON5,233,107,75,14,NOT WS_VISIBLE
+    PUSHBUTTON      "C&opy Result Values",IDC_BUTTON4,233,124,75,14
+    LTEXT           "&Verification values ( one value per line ): ",IDC_STATIC,7,127,131,11
+    EDITTEXT        IDC_EDIT1,7,140,301,30,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "V&erify it Now",IDOK,151,173,75,14
+    PUSHBUTTON      "&Paste and Verify it",IDC_BUTTON1,233,173,75,14
+    PUSHBUTTON      "&Quick Match to Clipboard",IDC_BUTTON6,7,173,97,14
+    LTEXT           "Made by Singun    Welcome to use and share",IDC_STATIC,7,189,200,11
+    CONTROL         "A&dd command to right-click menu",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,189,119,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,8,32
+ PRODUCTVERSION 1,2,8,32
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Hash Checksum Tool"
+            VALUE "FileVersion", "1.2.8.32"
+            VALUE "InternalName", "CalcHash"
+            VALUE "LegalCopyright", "Copyright 2012 Singun"
+            VALUE "OriginalFilename", "CalcHash.exe"
+            VALUE "ProductName", "Hash Checksum Tool"
+            VALUE "ProductVersion", "1.2.8.32"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_CALC_HASH_TITLE     "Hash Checksum Tool"
+    IDS_MENU_TOGGLE_AERO    "&Toggle Aero"
+    IDS_MSGBOX_AERO_FAILED  "Failed to toggle Aero!"
+    IDS_MSGBOX_NO_FILE      "Please select a file to verify!"
+    IDS_MSGBOX_NO_STRING    "Please enter a string to verify!"
+    IDS_MSGBOX_INVALID_FILE "Please select a valid file!"
+    IDS_MSGBOX_NO_ALGORITHM "Please select at least one checksum algorithm!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSGBOX_NO_RESULT    "Please select a file or enter a string to verify first!"
+    IDS_MSGBOX_CLIPBOARD_ERROR "Failed to opern clipboard!"
+    IDS_MSGBOX_NEED_CALC    "Please select a file or enter a string and calculate hash checksum first, and then verify the result!"
+    IDS_MSGBOX_NOT_EMPTY    "Verification value must not be empty!"
+    IDS_MSGBOX_VERIFY_SUCCESS 
+                            "The verification is successful! The correct checksum algorithms in results is: %s\nSome invalid verification data has been skipped!"
+    IDS_MSGBOX_VERIFY_ALL   "The verification is successful! All valid verification data values matched!"
+    IDS_MSGBOX_VERIFY_FAIL  "The verification fails! The checksum algorithms of result that not matched is: %s\nThe data may have been changed!"
+    IDS_MSGBOX_SAME_RESULT  "Clipboard data is the same with the value of checksum algorithms %s in calculation results!"
+    IDS_MSGBOX_DIFF_RESULT  "Clipboard data is not match to all values in calculation results!"
+    IDS_MSGBOX_CLIPBOARD_EMPTY "There is no string in clipboard."
+    IDS_MSGBOX_REGDEL_ERROR "Failed to delete registry key!"
+    IDS_MSGBOX_REGOPEN_ERROR "Failed to open registry key!"
+    IDS_MSGBOX_REGCREATE_ERROR "Failed to create registry key!"
+    IDS_MSGBOX_REGSET_ERROR "Failed to set registry key value!"
+    IDS_MSGBOX_REGICON_ERROR "Failed to set right-click menu icon!"
+    IDS_MSGBOX_CANNOT_READ_FILE "Cannot read file!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MSGBOX_GET_FILE_SIZE_ER "Cannot get file size!"
+    IDS_MSGBOX_CONTENT_COPIED 
+                            "The content of selected item has been copied to clipboard."
+    IDS_MSGBOX_REGEXE_ERROR "Failed to set right-click menu command!"
+    IDS_MSGBOX_REG_ERROR    "Please ensure that the program has sufficient permissions, and does not intercepted by security software."
+    IDS_MSGBOX_AERO_TOGGLE  "Are you sure to toggle Aero state of Windows system?"
+    IDS_MSGBOX_INVALID_ARG  "Invalid argument ""%s""."
+    IDS_MSGBOX_LNK_SELECT   "The current selection is a shortcut file, do you want to go to the corresponding target file?"
+    IDS_LNK_NOT_ASK_ME      "&Do not prompt me"
+    IDS_LIST_TYPE_FILE      "Verification Type: File ( Modification time: %04d/%02d/%02d %02d:%02d:%02d )"
+    IDS_LIST_SIZE           "Size: %s Bytes ( %s )"
+    IDS_LIST_TYPE_STRING    "Verification Type: String"
+    IDS_LIST_CANCEL         "Calculation canceled."
+    IDS_JUMPLIST_TOGGLE_AERO "Toggle Aero"
+    IDS_JUMPLIST_NO_AERO    "Start with Non-Aero Interface"
+    IDS_JUMPLIST_USE_AERO   "Start with Full-Aero Interface"
+    IDS_PRIVILEGE_MORE      "Higher Privilege Required"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PRIVILEGE_NEED      "Do not have privilege to change the file associated in the right-click menu."
+    IDS_PRIVILEGE_DESC      "Click ""Elevate Privileges"" to elevate to administrator privileges and continue."
+    IDS_PRIVILEGE_TIP1      "If the ""User Account Control"" window appears, select ""Yes"" or ""Allow""."
+    IDS_PRIVILEGE_TIP2      "If the ""Run As"" dialog box appears, Please enter administrator user name and password to login."
+    IDS_PRIVILEGE_ELEVATE   "Use administrator privileges to change the right-click menu"
+    IDS_PRIVILEGE_CANCEL    "Do not perform the operation to change the right-click menu"
+    IDS_PRIVILEGE_CANCEL2   "Click ""Cancel"" not to perform the operation to change the right-click menu."
+    IDS_PRIVILEGE_EXTENDED  "This window will be automatically closed after the operation completes."
+    IDS_PRIVILEGE_CMD1      "Elevate Privileges"
+    IDS_PRIVILEGE_CMD2      "Cancel"
+    IDS_RIGHT_CLICK_MENU    "Hash Checksum"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

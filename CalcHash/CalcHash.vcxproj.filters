@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{38287a59-c124-4954-93c0-13e55e4a56ec}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{240ae390-1843-4eee-8291-e26d223f219d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{306c6274-de87-4a25-944f-e51773ce9cd3}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="AeroSupport">
+      <UniqueIdentifier>{7233f667-c7d6-45eb-8409-ddaf890f5fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AeroSupport\Header">
+      <UniqueIdentifier>{a1e78938-9c7f-4d1a-8961-cbe66e08839e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AeroSupport\Source">
+      <UniqueIdentifier>{0f0f8c80-ea78-4b23-a2fb-7a3df3b89373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hash">
+      <UniqueIdentifier>{97fec8c8-36bc-4d09-91ff-50aa6cc8cf93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinFunc">
+      <UniqueIdentifier>{11a49c56-f4aa-4bd9-855b-c10c7fc4efe3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CalcHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\safassrt.c">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aeroanim.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerobutn.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerocmbo.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerodtpk.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aeroedit.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aeroglss.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerohdr.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aeroipad.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerolbox.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerolctr.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aeroprgs.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aeroslid.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerospin.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerostat.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerosubc.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="aero\aerotree.cpp">
+      <Filter>AeroSupport\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivilegeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash\hash.cpp">
+      <Filter>Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="winfunc\WinFunc.cpp">
+      <Filter>WinFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="FileMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivilegeNewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aero\aaeroint.h">
+      <Filter>AeroSupport\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="aero\aeroglss.h">
+      <Filter>AeroSupport\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="aero\aerosubc.h">
+      <Filter>AeroSupport\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="aero\p4710.h">
+      <Filter>AeroSupport\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="aero\safassrt.h">
+      <Filter>AeroSupport\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivilegeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash\hash.h">
+      <Filter>Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="StringDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winfunc\WinFunc.h">
+      <Filter>WinFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="winfunc\Win7ShellApi.h">
+      <Filter>WinFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winfunc\TaskDialog.h">
+      <Filter>WinFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivilegeNewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CalcFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CalcHash.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CalcHash.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\admin.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
